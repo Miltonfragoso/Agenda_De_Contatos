@@ -3,12 +3,12 @@
 
 # Sobre o projeto
 
-O projeto agenda de contatos é um projeto público desponibilizado e lecionado no conal "Programador tech" do Acaciano Neves.
+O projeto agenda de contatos é um projeto público desponibilizado e lecionado no canal "Programador tech" do Acaciano Neves.
 O projeto tem por objetivo gerenciar uma agenda de contatos, podendo adicionar, editar, excluir, um contato para um usuário do sistema. 
-O usuário do sitema por sua vez, pode redefinir sua senha e alterar. Existem dois perfis de usuários no sistema concedendo maior acesso ao admin e menos ao usuário padrâo.
+O usuário do sistema por sua vez, pode redefinir sua senha e alterar. Existem dois perfis de usuários no sistema concedendo maior acesso ao admin e menos ao usuário padrâo.
 Este projeto foi realizado com a pretenção de capacitação profissional e pessoal.
 
-Na realização deste projeto foram abordados temas e recursos de extrema importância para o dia a dia de um desenvolvedor de softwer.
+Na realização deste projeto foram abordados temas e recursos de extrema importância para o dia a dia de um desenvolvedor de software.
 
 
 # Layout do projeto
