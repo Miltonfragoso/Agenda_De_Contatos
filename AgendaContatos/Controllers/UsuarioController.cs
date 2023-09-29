@@ -39,6 +39,11 @@ namespace AgendaContatos.Controllers
 
                 if (ModelState.IsValid)
                 {
+                    if(UsuarioExiste(usuario.Login) == true)
+                    {
+                        TempData["MensagemErro"] = "Usuário já existe, tente com outro login!";
+                        return RedirectToAction("Index");
+                    }
                     usuarioRepositorio.Adicionar(usuario);
                     TempData["MensagemSucesso"] = "Usuário cadastrado comsucesso!";
                     return RedirectToAction("Index");
@@ -131,6 +136,17 @@ namespace AgendaContatos.Controllers
         {
             List<ContatoModel> contatos = contatoRepositorio.BuscarTodos(id);
             return PartialView("_ContatosUsuarios", contatos);
+        }
+
+        private bool UsuarioExiste(string login)
+        {
+            var usuarioAtual = usuarioRepositorio.BuscarPorLogin(login);
+
+            if(usuarioAtual != null)
+            {
+                return true;
+            }
+           return false;
         }
 
     }
